@@ -1,0 +1,18 @@
+[package]
+name = "miden-zed-extension"
+version = "0.1.0"
+authors = ["Miden contributors"]
+description = "Provides native support for Miden projects in Zed"
+repository = "https://github.com/0xMiden/miden-zed-extension"
+homepage = "https://github.com/0xMiden/miden-zed-extension"
+categories = ["development-tools"]
+keywords = ["miden", "zed"]
+license = "MIT"
+readme = "README.md"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+zed_extension_api = "0.1"

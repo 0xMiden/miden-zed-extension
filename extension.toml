@@ -1,0 +1,24 @@
+id = "miden"
+name = "Miden"
+version = "0.0.1"
+schema_version = 1
+authors = ["Paul Schoenfelder <pauls@miden.team>"]
+description = "Language and debugging support for Miden projects"
+repository = "https://github.com/0xMiden/miden-zed-extension"
+
+[grammars.masm]
+#repository = "file://../../../tree-sitter-masm"
+repository = "https://github.com/0xMiden/tree-sitter-masm"
+rev = "86d9e6f3aebbe059902f346d5efb5ca75157f992"
+
+[language_servers.masm]
+name = "Miden Assembly"
+languages = ["Miden Assembly"]
+
+#[debug_adapters.masm]
+# Optional relative path to the JSON schema for the debug adapter configuration schema.
+# Defaults to `debug_adapter_schemas/$DEBUG_ADAPTER_NAME_ID.json`.
+# Note that while this field is optional, a schema is mandatory.
+#schema_path = "dap/schema.json"
+
+#[debug_locators.masm-program]

@@ -1,0 +1,7 @@
+name = "Miden Assembly"
+grammar = "masm"
+path_suffixes = ["masm"]
+line_comments = ["#", "#!"]
+word_characters = ["$"]
+
+#debuggers = ["masm"]
